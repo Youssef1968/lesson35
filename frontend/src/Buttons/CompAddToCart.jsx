@@ -67,7 +67,7 @@ const CompAddToCart = ({ vrSource }) => {
       ) : (
         <Button
           className="mira_231024_161055_406"
-          sx={{ textTransform: "capitalize", p: 1, lineHeight: 1.1 }}
+          sx={{mt:"33px",textTransform: "capitalize", p: 1, lineHeight: 1.1 }}
           variant="contained"
           color="primary"
           onClick={() => {

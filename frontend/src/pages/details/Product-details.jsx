@@ -39,13 +39,13 @@ const ProductDetails = () => {
             <img src={data.imageLink[index]} alt="" />
           </div>
 
-          <div className="box">
-            <div className="row">
-              <h2>{data.productName}</h2>
-              <span>${data.price}</span>
+          <div className="mira_231030_135642_522 box">
+            <div className="mira_231030_135625_163 row">
+              <h2 className="mira_231030_135617_459" style={{fontSize:"29px"}}>{data.productName}</h2>
+              <span className="mira_231030_135600_686">${data.price}</span>
             </div>
 
-            <p>{data.description}</p>
+            <p className="mira_231030_135446_678"  style={{fontSize:"18px"}} >{data.description}</p>
 
             <div className="mira_231024_151858_212 thumb" ref={myRef}>
               {data.imageLink.map((img, index) => (
