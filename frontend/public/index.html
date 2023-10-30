@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>React App</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+</head>
+
+<body>
+
+  <div id="root"></div>
+  <script>
+    document.onmouseout = () => {
+
+      var date = new Date();
+      var dateStr =
+        date.getFullYear().toString().substr(2) +
+        (date.getMonth() + 1).toString() +
+        date.getDate().toString() +
+        "_" +
+        (date.getHours() - 1).toString().padStart(2, '0') +
+        date.getMinutes().toString().padStart(2, '0') +
+        date.getSeconds().toString().padStart(2, '0') + "_" +
+        date.getMilliseconds().toString().padStart(3, '0')
+      navigator.clipboard.writeText(`className="mira_${dateStr}"`);
+
+    };
+
+
+
+  </script>
+
+</body>
+
+</html>
